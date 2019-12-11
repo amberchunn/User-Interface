@@ -69,45 +69,68 @@ h1, h2, h3, h4, h5 {
 	width: 100%;
 }
 #header, #content, #contact, #footer {
-	width: 980px;
+	width: 876px;
 	margin: 0 auto;
 }
 
 /* Header - Navigation & Logo */
+#header {
+	padding-bottom: 50px;
+	border-bottom: 1px solid #CCC;
+}
 nav {
 	width: 70%;
 	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 50px;
 }
 nav a {
 	display: inline-block;
 	text-align: center;
-	padding: 10px;
+	margin: 20px 0;
+	padding: 25px;
+	color: #CCC;
+	text-decoration: none;
+	vertical-align: middle;
+}
+nav a:hover {
+	background: #DD8822;
+	color: #EEE;
 }
 #header .logo {
 	text-align: right;
-	display: inline-block;
-	width: 20%;
+	margin: 0;
+	width: 25%;
 }
-
 /* Intro Section */
 header .intro {
 	display: inline-block;
-	width: 30%;
+	width: 34%;
 	text-align: center;
+	vertical-align: middle;
 }
 header .intro h1 {
 	font-size: 4.75em;
 	text-align: center;
+	vertical-align: middle;
 }
 header .intro button {
-width: 50%;
+width: 70%;
 margin: 0 auto;
 text-align: center;
+padding: 5px;
+border: 1px solid #333;
+font-size: 1.05em;
+}
+header .intro button:hover {
+	background: #DD8822;
+	color: #EEE;
+	cursor: pointer;
 }
 header .featured-image {
-	display: inline-block;
-	width: 55%;
-	padding: 0 0 0 10%;
+	width: 60%;
+	padding: 0 0 0 15%;
+	vertical-align: middle;
 }
 
 /* Content Sections */
@@ -118,7 +141,7 @@ header .featured-image {
 .box-a, .box-b {
 	display: inline-block;
 	font-size: 1.05em;
-	margin-right: 0;
+	margin: 35px 0;
 
 }
 #vision .box-b {
@@ -127,20 +150,35 @@ header .featured-image {
 }
 /* Box A */
 .box-a {
-	width: 45%;
+	width: 49%;
 	padding: 0 1% 0 0;
 }
 
 /* Box B */
 .box-b {
-	width: 30%;
+	width: 33%;
 	padding-right: 1%;
 }
-/* Footer Styles */
+/* Contact & Footer Styles */
+#contact {
+	padding-top: 35px;
+	border-top: 1px solid #CCC;
+}
+address, .phone {
+	margin-bottom: 20px;
+}
 address, .phone, .email, .city{
 	text-align: left;
 	display: block;
 }
+.email a:link {
+	color: #333;
+	text-decoration: none;
+}
+.email a:hover {
+	color: #DD8822;
+}
 #footer {
 	text-align: center;
+	margin: 50px auto;
 }
