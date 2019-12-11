@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -64,3 +64,121 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+
+#container {
+	width: 100%;
+}
+#header, #content, #contact, #footer {
+	width: 876px;
+	margin: 0 auto;
+}
+
+/* Header - Navigation & Logo */
+#header {
+	padding-bottom: 50px;
+	border-bottom: 1px solid #CCC;
+}
+nav {
+	width: 70%;
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 50px;
+}
+nav a {
+	display: inline-block;
+	text-align: center;
+	margin: 20px 0;
+	padding: 25px;
+	color: #CCC;
+	text-decoration: none;
+	vertical-align: middle;
+}
+nav a:hover {
+	background: #DD8822;
+	color: #EEE;
+}
+#header .logo {
+	text-align: right;
+	margin: 0;
+	width: 25%;
+}
+/* Intro Section */
+header .intro {
+	display: inline-block;
+	width: 34%;
+	text-align: center;
+	vertical-align: middle;
+}
+header .intro h1 {
+	font-size: 4.75em;
+	text-align: center;
+	vertical-align: middle;
+}
+header .intro button {
+width: 70%;
+margin: 0 auto;
+text-align: center;
+padding: 5px;
+border: 1px solid #333;
+font-size: 1.05em;
+}
+header .intro button:hover {
+	background: #DD8822;
+	color: #EEE;
+	cursor: pointer;
+}
+header .featured-image {
+	width: 60%;
+	padding: 0 0 0 15%;
+	vertical-align: middle;
+}
+
+/* Content Sections */
+.box-a h2, .box-b h2 {
+	font-size: 1.05em;
+	text-transform: uppercase;
+}
+.box-a, .box-b {
+	display: inline-block;
+	font-size: 1.05em;
+	margin: 35px 0;
+
+}
+#vision .box-b {
+	margin-right: 0;
+	padding-right: 0;
+}
+/* Box A */
+.box-a {
+	width: 49%;
+	padding: 0 1% 0 0;
+}
+
+/* Box B */
+.box-b {
+	width: 33%;
+	padding-right: 1%;
+}
+/* Contact & Footer Styles */
+#contact {
+	padding-top: 35px;
+	border-top: 1px solid #CCC;
+}
+address, .phone {
+	margin-bottom: 20px;
+}
+address, .phone, .email, .city{
+	text-align: left;
+	display: block;
+}
+.email a:link {
+	color: #333;
+	text-decoration: none;
+}
+.email a:hover {
+	color: #DD8822;
+}
+#footer {
+	text-align: center;
+	margin: 50px auto;
+}
